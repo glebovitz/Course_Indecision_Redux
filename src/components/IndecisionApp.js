@@ -7,7 +7,7 @@ import Options from './Options';
 import OptionModal from './OptionModal';
 import { 
     setOptions, 
-    pickOption,
+    selectOption,
     addOption,
     clearSelectedOption 
 } from '../actions/options';
@@ -30,10 +30,14 @@ export class IndecisionApp extends React.Component {
             localStorage.setItem('options', json);
         }
     };
+    pickOption = () => {
+        const randomNum = Math.floor(Math.random() * this.props.options.length);
+        const option = this.props.options[randomNum];
+        this.props.selectOption(option);
+    };
     render () {
         const title = "Indecision";
         const subtitle = "Put you life in the hands of a computer.";
-        const options = ['thing1', 'thing2', 'thing3'];
         return (
             <div>
                 <Header 
@@ -43,7 +47,7 @@ export class IndecisionApp extends React.Component {
                 <div className='container'>
                     <Action 
                         hasOptions={this.props.options.length > 0}
-                        pickOption={this.props.pickOption}
+                        pickOption={this.pickOption}
                     />
                     <div className='widget'>
                     <Options />
@@ -56,7 +60,7 @@ export class IndecisionApp extends React.Component {
                 </div>
                 <OptionModal
                     selectedOption={this.props.selectedOption}
-                    clearSelectedOption={this.clearSelectedOption}
+                    clearSelectedOption={this.props.clearSelectedOption}
                 />
             </div>
         );
@@ -73,7 +77,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => ({
     setOptions: (options) => dispatch(setOptions(options)),
-    pickOption: () => dispatch(pickOption()),
+    selectOption: (option) => dispatch(selectOption(option)),
     addOption: (option) => dispatch(addOption(option)),
     clearSelectedOption: () => dispatch(clearSelectedOption())
 });
