@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render an Action Component correctly 1`] = `
+<div>
+  <button
+    className="big-button"
+    disabled={false}
+  >
+    What should I do?
+  </button>
+</div>
+`;
+
+exports[`should render disabled Action Component correctly 1`] = `
+<div>
+  <button
+    className="big-button"
+    disabled={true}
+  >
+    What should I do?
+  </button>
+</div>
+`;

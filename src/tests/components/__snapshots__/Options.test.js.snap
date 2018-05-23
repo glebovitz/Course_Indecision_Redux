@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render an Options Component correctly 1`] = `
+<div>
+  <div
+    className="widget-header"
+  >
+    <h3
+      className="widget-header__title"
+    >
+      Your Options
+    </h3>
+    <button
+      className="button button--link"
+    >
+      Remove All
+    </button>
+  </div>
+  <Option
+    count={1}
+    key="first item"
+    optionText="first item"
+  />
+  <Option
+    count={2}
+    key="second item"
+    optionText="second item"
+  />
+  <Option
+    count={3}
+    key="third item"
+    optionText="third item"
+  />
+</div>
+`;

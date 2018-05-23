@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render an Option Component correctly 1`] = `
+<div
+  className="option"
+>
+  <p
+    className="option__text"
+  >
+    . 
+  </p>
+  <button
+    className="button button--link"
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+</div>
+`;
+
+exports[`should render an Option Component with properties correctly 1`] = `
+<div
+  className="option"
+>
+  <p
+    className="option__text"
+  >
+    5
+    . 
+    Test Text
+  </p>
+  <button
+    className="button button--link"
+    onClick={[Function]}
+  >
+    Remove
+  </button>
+</div>
+`;

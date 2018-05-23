@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Component correctly 1`] = `
+<div>
+  <form
+    className="add-option"
+    onSubmit={[Function]}
+  >
+    <input
+      className="add-option__input"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      className="button"
+    >
+      Add Option
+    </button>
+  </form>
+</div>
+`;
+
+exports[`should render Component correctly 2`] = `
+<div>
+  <p
+    className="add-option-error"
+  >
+    testabcde
+  </p>
+  <form
+    className="add-option"
+    onSubmit={[Function]}
+  >
+    <input
+      className="add-option__input"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      className="button"
+    >
+      Add Option
+    </button>
+  </form>
+</div>
+`;

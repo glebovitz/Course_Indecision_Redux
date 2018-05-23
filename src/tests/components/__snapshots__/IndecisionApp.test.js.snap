@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Component with defaults correctly 1`] = `
+<div>
+  <Header
+    subtitle="Put you life in the hands of a computer."
+    title="Indecision"
+  />
+  <div
+    className="container"
+  >
+    <Action
+      hasOptions={false}
+      pickOption={[Function]}
+    />
+    <div
+      className="widget"
+    >
+      <Connect(Options) />
+      <AddOption
+        optionCount={0}
+      />
+    </div>
+  </div>
+  <OptionModal />
+</div>
+`;
+
+exports[`should render Component with values correctly 1`] = `
+<div>
+  <Header
+    subtitle="Put you life in the hands of a computer."
+    title="Indecision"
+  />
+  <div
+    className="container"
+  >
+    <Action
+      hasOptions={true}
+      pickOption={[Function]}
+    />
+    <div
+      className="widget"
+    >
+      <Connect(Options) />
+      <AddOption
+        error="test123456"
+        optionCount={3}
+      />
+    </div>
+  </div>
+  <OptionModal
+    selectedOption="testabcdef"
+  />
+</div>
+`;

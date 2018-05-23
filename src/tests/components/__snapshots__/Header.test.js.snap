@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render an Header Component correctly 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="container"
+  >
+    <h1
+      className="header__title"
+    >
+      some default
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`should render an Header Component correctly 2`] = `
+<div
+  className="header"
+>
+  <div
+    className="container"
+  >
+    <h1
+      className="header__title"
+    >
+      Test Title
+    </h1>
+    <h2
+      className="header__subtitle"
+    >
+      Test Subtitle
+    </h2>
+  </div>
+</div>
+`;
