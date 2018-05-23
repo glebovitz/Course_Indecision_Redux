@@ -18,13 +18,11 @@ export default (state = defaultState, action) => {
         error: undefined,
         options: state.options.filter((option) => action.option !== option)
       };
-    case 'PICK_OPTION': {
-      const randomNum = Math.floor(Math.random() * this.state.options.length);
-      const option = this.state.options[randomNum];
+    case 'SELECT_OPTION': {
       return {
         ...state,
         error: undefined,
-        selectedOption: option
+        selectedOption: action.option
       };
     };
     case 'ADD_OPTION': {
