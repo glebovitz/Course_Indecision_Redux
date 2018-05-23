@@ -7,8 +7,9 @@ export const deleteOption = (option) => ({
   option
 });
 
-export const pickOption = () => ({
-  type: 'PICK_OPTIONS',
+export const selectOption = (option) => ({
+  type: 'SELECT_OPTION',
+  option
 });
 
 export const addOption = (option) => ({
