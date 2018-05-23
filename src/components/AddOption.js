@@ -6,7 +6,7 @@ export default class AddOption extends React.Component {
         optionCount: 0 //used to store previous optionCount prop
     };
 
-    // used changes in optionCount to determine that we successfully added
+    // use changes in optionCount to determine that we successfully added
     // a new option. Previous optionCount is stored in local state.
     static getDerivedStateFromProps = (nextProps, prevState) => {
         if (nextProps.optionCount !== prevState.optionCount) {
